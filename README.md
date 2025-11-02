@@ -6,12 +6,13 @@ This project demonstrates how data engineering strategies — including ETL pipe
 
 ## 🚀 Project Overview
 
-Real estate data is often scattered across CRMs, listing platforms, and spreadsheets.  
+Metropeak data is often stored across multiple platforms and databases.  
 This project builds a **modern data pipeline** that:
 
 - Extracts data from multiple platforms (databases, APIs, files)
 - Transforms and cleans it using **Python + pandas**
-- Loads it into a centralized **data warehouse** for analytics
+- Loads it into a centralized **Postgresql database** 
+<!-- - Loads it into a centralized **data warehouse** for analytics -->
 - Enables **real-time access** via dashboards or APIs
 
 ---
@@ -20,7 +21,7 @@ This project builds a **modern data pipeline** that:
 
 | Layer          | Tool                         | Purpose                               |
 | -------------- | ---------------------------- | ------------------------------------- |
-| Extraction     | **Airbyte**                  | Ingest data from multiple sources     |
+| Extraction     | **Python**                   | Ingest data from multiple sources     |
 | Transformation | **Python (pandas)**          | Clean, validate, and standardize data |
 | Storage        | **PostgreSQL / Snowflake**   | Centralized warehouse                 |
 | Orchestration  | **Airflow / dbt (optional)** | Schedule and manage pipeline runs     |
